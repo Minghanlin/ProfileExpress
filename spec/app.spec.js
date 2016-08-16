@@ -2,6 +2,8 @@ var  app = require('../app');
 var request = require("request");
 var supertest = require("supertest");
 var base_url = "http://localhost:3000/";
+var about_url = base_url + 'about';
+var contact_url = base_url + 'contact';
 
 
 describe("Express Server API", function () {
@@ -23,6 +25,7 @@ describe("Express Server API", function () {
           hobbies: 'blah blah',
           description: 'blah blah blah'
         }, done);
+        done();
     });
 
   });
